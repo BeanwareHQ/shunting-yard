@@ -1,0 +1,3 @@
+#!/bin/sh --
+read -r line
+printf %s\\n "$line" | { ./shyard; printf p;} | dc
